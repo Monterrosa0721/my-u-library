@@ -1,0 +1,9 @@
+<% @books.each do |book| %>
+<h1><%= book.title %></h1>
+<div>
+    <%= book.author %>
+    <br>
+    <%= link_to "Show", book, class:"green" %> - 
+    <%= link_to "delete", book, class:"red" %>
+</div>
+<%end%>

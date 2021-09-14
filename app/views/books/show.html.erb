@@ -1,0 +1,13 @@
+<h1><%= @book.title %></h1>
+
+<div>
+    <%= @book.author %>
+    <br>
+    <%= @book.published %>
+    <br>
+    <%= @book.genre %>
+    <br>
+    <%= @book.stock %>
+    <br>
+    <%= link_to "EDIT", edit_book_path(@book) %>
+</div>

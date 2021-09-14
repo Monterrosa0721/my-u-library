@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    
+  </head>
+    <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <header>
+      <nav class="be-red white large-padding">
+        <ul class="no-list row center-xs middle-xs">
+        <li class="col-md">
+           <h1 class="no-margin" id="logo"> My U Library </h1>
+          </li>
+          <li class="col-md">
+          <%= link_to "Inicio", root_path %>
+          </li>
+          <li class="col-md">
+            <%= link_to "New Book", new_book_path() %>
+          </li>
+          <li class="col-md">
+            <%= link_to "List Book", root_path %>
+          </li>
+          <li class="col-md">
+            New Users
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
     <%= yield %>
+
   </body>
 </html>

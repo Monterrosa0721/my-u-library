@@ -21,6 +21,12 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'devise', '~> 4.8'
+gem 'bcrypt','~> 3.0'
+gem 'orm_adapter',' ~> 0.1'
+gem 'railties','>= 4.1.0'
+gem 'responders','>= 0'
+gem 'warden','~> 1.2.3'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
